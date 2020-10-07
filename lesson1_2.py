@@ -1,11 +1,7 @@
-a = float(input("Enter start: "))
-b = float(input("Enter finish: "))
-day = 1
-if a > b:
-    print(day)
-while a < b:
-    a = a + a/10
-    day += 1
-print(day)
+time = int(input("Enter time in sec"))
+hours = time // 3600
+minutes = (time - hours * 3600) // 60
+seconds = time - (hours * 3600 + minutes * 60)
+print(f"Time: hh:mm:ss   {hours} : {minutes} : {seconds}"
 
 
